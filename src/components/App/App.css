@@ -1,7 +1,17 @@
 @import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts/fonts.css);
+
+:root {
+    --yellow: #FFE66D;
+    --black: #191923;
+    --white-back: #fff;
+    --white: #F7FFF7;
+    --red: #FF6B6B;
+    --light-gray: rgba(1, 22, 39, 0.1);
+  }
 
 .page {
-    background-color: #fff;
+    background-color: var(--white-back);
     font-family: "Inter", "Arial", "Helvetica", sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -12,4 +22,8 @@
     width: 100%;
     font-family: Inter;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
