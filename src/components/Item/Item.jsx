@@ -8,21 +8,19 @@ function Item({ type }) {
         <input type="text" className="item__title" placeholder="заголовок" />
       </div>
       <div className="item__sub-conteiner">
-        <div className="item__data-container">
-          <button className="item__data-button" type="button"></button>
-          <input
-            type="data"
-            className="item__data-input"
-            placeholder="дата окончания"
-          />
-        </div>
+        <input
+          className="item__data-input"
+          placeholder="дата окончания"
+          type="date"
+        />
+
         <div className="item__option-conteiner">
-          <button className="item__save-button"></button>
-          <button className="item__add-button"></button>
+          <button className="item__save-button" type="button"></button>
+          <button className="item__add-button" type="button"></button>
         </div>
         <div className="item__done-container">
           <p className="item__subtitle">завершено</p>
-          <button className="item__done-button"></button>
+          <button className="item__done-button" type="button"></button>
         </div>
       </div>
       <textarea

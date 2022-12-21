@@ -8,6 +8,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  border: 1px solid var(--light-gray);
+  border-radius: 0 0 5px 5px;
+  border-top-style: none;
 }
 
 .header__title {

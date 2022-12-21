@@ -1,7 +1,7 @@
 .item__conteiner {
   width: 440px;
   height: 220px;
-  /* background-color: var(--red); */
+  /*  background-color: var(--red); */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -23,16 +23,18 @@
   padding: 0;
   box-sizing: border-box;
   background: center no-repeat url(../../images/cross.svg) var(--white);
+  outline-color: var(--red);
 }
 
 .item__title {
   width: 390px;
   height: 40px;
-  padding: 0;
+  padding-left: 10px;
   border: 1px solid var(--light-gray);
   border-radius: 5px;
   background-color: var(--white);
   box-sizing: border-box;
+  outline-color: var(--red);
 }
 
 .item__sub-conteiner {
@@ -44,18 +46,13 @@
   margin: 10px 0 10px 0;
 }
 
-.item__data-container {
-  position: relative;
-  width: 144px;
-  height: 42px;
-  border: 1px solid var(--light-gray);
-  border-radius: 5px;
-  background-color: var(--white);
-  /* box-sizing: border-box; */
+.item__data-container:focus {
+  border: var(--red);
 }
 
-.item__data-button {
+/* .item__data-button {
   position: absolute;
+  display: none;
   top: 0;
   left: 0;
   display: flex;
@@ -63,26 +60,29 @@
   justify-content: space-between;
   width: 40px;
   height: 40px;
-  background: var(--white) no-repeat center url(../../images/calendar.svg);
+  background: no-repeat center url(../../images/calendar.svg);
   border: 0;
   border-radius: 5px 0 0 5px;
   padding: 0;
+  outline: none;
+} */
+
+.item__data-button:focus {
+  fill: black url(../../images/calendar.svg);
 }
 
 .item__data-input {
-  position: absolute;
-  top: 0;
-  left: 38px;
-  width: 104px;
+  width: 144px;
   height: 40px;
-  padding: 0;
-  border: 0;
-  border-radius: 0 5px 5px 0;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
   background-color: var(--white);
-  font-size: 10px;
+  padding: 0 5px 0 0;
+  text-align: center;
+  font-size: 12px;
   font-weight: 400;
   text-align: center;
-  outline: 0;
+  outline-color: var(--red);
 }
 
 .item__option-conteiner {
@@ -101,6 +101,7 @@
   padding: 0;
   border: 0;
   background: var(--white) no-repeat center url(../../images/save.svg);
+  outline-color: var(--red);
 }
 
 .item__add-button {
@@ -110,6 +111,7 @@
   padding: 0;
   background: var(--white) no-repeat center url(../../images/paper-clip.svg);
   margin-left: 20px;
+  outline-color: var(--red);
 }
 
 .item__done-container {
@@ -133,6 +135,7 @@
   border-radius: 5px;
   padding: 0;
   background: var(--white) no-repeat center url(../../images/check.svg);
+  outline-color: var(--red);
 }
 
 .item__description {
@@ -143,4 +146,8 @@
   border: 1px solid var(--light-gray);
   border-radius: 5px;
   background-color: var(--white);
+  resize: none;
+  padding: 5px 10px 5px 10px;
+  outline-color: var(--red);
+  font-size: 12px;
 }
